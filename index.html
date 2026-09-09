@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hana Straková - Grafický dizajn</title>
+    <style>
+        /* Reset základných nastavení */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Nastavenie pozadia aplikovaného na celú stránku */
+        .bg-image {
+            background-image: url('plagat_kaluz.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Obrázok zostane fixný pri scrolovaní */
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Textový box s vizitkou */
+        .card {
+            background-color: rgba(28, 24, 66, 0.9); /* Tmavomodrá farba z plagátu s miernou priehľadnosťou */
+            color: #ffffff;
+            padding: 30px 50px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(4px); /* Jemné rozmazanie pozadia pod kartou */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #dfb2d4; /* Ružovkastý odtieň zladený s plagátom */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        /* Prispôsobenie pre mobilné zariadenia */
+        @media (max-width: 480px) {
+            .card {
+                padding: 20px 30px;
+                width: 90%;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image">
+        <div class="card">
+            <h1>Hana Straková</h1>
+            <p>grafický dizajn</p>
+        </div>
+    </div>
+
+</body>
+</html>
